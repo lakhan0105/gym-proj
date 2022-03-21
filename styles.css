@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: url('https://ak.picdn.net/shutterstock/videos/1024941779/thumb/1.jpg?ip=x480');
+     */
+    /* background-image: url('https://webartdevelopers.com/blog/wp-content/uploads/2019/02/Pure-CSS3-Gradient-Background-Animation.gif'); */
+    background-image: url('https://webgradients.com/public/webgradients_png/013%20Heavy%20Rain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.navbar{
+    /* border-bottom:  2px solid rgb(226, 224, 224); */
+    display:flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    padding: 0px 10px;
+    vertical-align: top;
+    box-shadow: 0px 1px 5px rgba(75, 75, 75, 0.123);
+    /* background-color: rgb(219, 218, 218);
+     */
+     background-color: rgb(31, 30, 30);
+     box-shadow: 1px 1px 10px rgba(77, 76, 76, 0.719);
+}
+/* .navbar>div>h1{
+    margin: 0;
+    margin-top: 4px;
+    color: white;
+} */
+
+.logo{
+    width: 180px;
+    height: 60px;
+    object-fit: contain;
+    /* border: 2px solid white; */
+}
+.logo>img{
+    width: 100%;
+    height: 96%;
+    object-fit: inherit;
+
+}
+.list-cont>li{
+    display: inline-block;
+    /* border: 2px solid; */
+    padding: 0px;
+    margin: 0 18px;
+}
+.list-cont>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+.list-cont >li>a:hover{
+    color: rgb(214, 208, 208);
+
+}
+
+/* ============================================ */
+.container-1{
+    margin-top: 111px;
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex; */
+    
+}
+.info-cont{
+    /* border: 2px solid; */
+    padding: 100px 20px;
+    padding-right: 80px;   
+}
+.info-cont>p{
+    padding-left: 3px;
+
+}
+
+h1{
+    font-size: 45px;
+    /* font-family: 'Montserrat', sans-serif; */
+
+}
+
+.info-cont>p{
+    color: rgb(96, 96, 96);
+    line-height: 29px;
+    font-size: 18px;
+}
+.graphic-cont{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.graphic-cont>img{
+    width: 80%;
+    height: 58%;
+    box-shadow: 1px 1px 8px rgba(77, 76, 76, 0.719);
+    border-radius: 4px;
+
+}
+
+/* BUTTON================================================ */
+.btn{
+    background-color: rgba(0, 81, 255, 0.842);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+    /* transition: box-shadow 0.15s; */
+    transition: opacity 0.15s;
+    margin-top: 25px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(37, 37, 37, 0.438);
+}
+/* ==========================iphone media query======================== */
+@media only screen and (max-width:672px){
+    .graphic-cont{
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .graphic-cont>img{
+        width: 200px;
+    }
+}
+/* ================================= */
+@media only screen and (max-width:375px){
+    .navbar{
+        display: inline-block;
+    }
+    .navbar>div>h1{
+        display: none;
+    }
+
+    .list-cont>li{
+        font-size: 14px;
+        margin: 0;
+        
+    }
+    .container-1{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid;
+        /* padding: 0; */
+    }
+
+    .info-cont{
+        padding: 5px;
+    }
+    .graphic-cont{
+        display: none;
+    }
+}
+/* CONTAINER-2======================================================================= */
+.container-2{
+    margin-top: 110px;
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    padding: 150px 100px;
+    vertical-align: top;
+    background-color: #fff;
+    padding-bottom: 50px;
+      
+}
+.card{
+    /* border: 2px solid; */
+    /* margin: 0 110px; */
+    width: 270px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-left: 5px;
+
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+    background-color: antiquewhite;
+    background-image: url('');
+    border-radius: 4px;
+    
+    
+}
+
+.container-2 p{
+    /* padding: 10px; */
+    color: rgb(83, 83, 83);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.container-2 p:hover{
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+
+}
+
+.container-3{
+    text-align: center;
+}
+
+/* ===================CONTAINER -4  ==================================== */
+.container-4{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-4 .plan{
+    border: 2px solid;
+    margin: 10px;
+    padding: 1px 5px;
+    flex-wrap: wrap;
+    /* vertical-align: top; */
+}
+.container-3>.plan>h3{
+    margin: 0;
+}
